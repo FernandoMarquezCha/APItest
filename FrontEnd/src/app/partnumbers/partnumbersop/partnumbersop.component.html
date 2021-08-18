@@ -1,0 +1,38 @@
+<br>
+<br>
+<form [formGroup]="form" (ngSubmit)="addPartnumbers()">
+    <div class="mb-3">
+        <div class="input-group mb-3">
+           
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-solid fa-hashtag"></i>
+                </div>
+            
+            <input type="text" class="form-control" fromControlName="partnumber" placeholder="Part Number">
+        </div>
+    </div>
+   
+    <div class="mb-3">
+        <div class="input-group mb-3">
+         
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-users-cog"></i>
+                
+            </div>
+            <input type="text" class="form-control" formControlName="customer" placeholder="Customer">
+        </div>
+        <div class="mb-3">
+            <div class="input-group mb-3">
+               
+                    <div class="input-group-text bg-white">
+                        <i class="fas fa-regular fa-check"></i>
+                    </div>
+                
+                <input type="text" class="form-control" fromControlName="available" placeholder="Is available">
+            </div>
+        </div>
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-success btn-block" type="submit">Add</button>
+    </div>
+</form>
