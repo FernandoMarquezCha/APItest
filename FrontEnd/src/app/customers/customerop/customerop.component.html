@@ -1,0 +1,47 @@
+<br>
+<br>
+<form [formGroup]="form" (ngSubmit)="addCustomer()">
+    <div class="mb-3">
+        <div class="input-group mb-3">
+           
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-solid fa-building"></i>
+                </div>
+            
+            <input type="text" class="form-control" fromControlName="customer" placeholder="Customer">
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="input-group mb-3">
+           
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-solid fa-building"></i>
+                </div>
+            
+            <input type="text" class="form-control" fromControlName="prefix" placeholder="Prefix">
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="input-group mb-3">
+         
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-regular fa-check"></i>
+                
+            </div>
+            <input type="text" class="form-control" formControlName="building" placeholder="Building">
+        </div>
+        <div class="mb-3">
+            <div class="input-group mb-3">
+               
+                    <div class="input-group-text bg-white">
+                        <i class="fas fa-solid fa-building"></i>
+                    </div>
+                
+                <input type="text" class="form-control" fromControlName="available" placeholder="Is available">
+            </div>
+        </div>
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-success btn-block" type="submit">Add</button>
+    </div>
+</form>

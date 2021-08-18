@@ -1,0 +1,27 @@
+<br>
+<br>
+<form [formGroup]="form" (ngSubmit)="addBuilding()">
+    <div class="mb-3">
+        <div class="input-group mb-3">
+           
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-solid fa-building"></i>
+                </div>
+            
+            <input type="text" class="form-control" fromControlName="building" placeholder="Building">
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="input-group">
+         
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-regular fa-check"></i>
+                
+            </div>
+            <input type="text" class="form-control" formControlName="avaliable" placeholder="Avaliable">
+        </div>
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-success btn-block" type="submit">Add</button>
+    </div>
+</form>

@@ -1,0 +1,25 @@
+
+
+<div class="container">
+    <br>
+<table class="table table-striped">
+    <thead>
+        <th>Building</th>
+        <th>Is available</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+    </thead>
+    <tr *ngFor="let list of buildingservice.list">
+    <td>{{ list.building}}</td>
+    <td>{{ list.avaliable}}</td>
+   
+    <td>
+        <i class="far fa-edit fa-lg text-info" style="cursor: pointer"></i>
+    </td>
+    <td>
+        <i class="far fa-trash-alt fa-lg text-danger" style="cursor: pointer"></i>
+    </td>
+</tr>
+</table>
+</div>
